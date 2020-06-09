@@ -20,7 +20,7 @@ class SettingViewController: UIViewController {
         
         var title: String {
             switch self {
-            case .appVersion: return "버전 \(Bundle.main.appVersion)"
+            case .appVersion: return "버전 \(UIApplication.shared.appVersion)"
             case .contact: return "꼬꼬덱 꼬꼬"
             case .rate: return "제 점수는요 😍"
             case .recipe: return
@@ -77,7 +77,6 @@ extension SettingViewController: UITableViewDataSource {
     }
 }
 
-
 extension SettingViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         guard let menu = MenuType(rawValue: indexPath.row) else { return }
@@ -98,7 +97,6 @@ extension SettingViewController: UITableViewDelegate {
     }
 }
 
-
 extension SettingViewController: MFMailComposeViewControllerDelegate {
     func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
         controller.dismiss(animated: true, completion: nil)
@@ -109,10 +107,8 @@ class SettingCell: UITableViewCell {
     @IBOutlet weak var menuTitle: UILabel!
 }
 
-
-extension Bundle {
+extension UIApplication {
     var appVersion: String {
-        guard let infoDic = infoDictionary, let version = infoDic["CFBundleShortVersionString"] as? String else { return "" }
-        return version
+        return Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String ?? "1.0"
     }
 }

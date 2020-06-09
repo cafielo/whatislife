@@ -9,6 +9,19 @@
 /* Begin PBXBuildFile section */
 		940F501E24333CD3002E758C /* BMYEONSUNG_otf.otf in Resources */ = {isa = PBXBuildFile; fileRef = 940F501C24333CD3002E758C /* BMYEONSUNG_otf.otf */; };
 		940F501F24333CD3002E758C /* BMEULJIRO.otf in Resources */ = {isa = PBXBuildFile; fileRef = 940F501D24333CD3002E758C /* BMEULJIRO.otf */; };
+		9423A26924755CF200C6B64B /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9423A26824755CF200C6B64B /* Storage.swift */; };
+		9423A26B24756CEA00C6B64B /* HistoryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9423A26A24756CEA00C6B64B /* HistoryManager.swift */; };
+		9435B2FF24387FAD00DDF523 /* babyChick.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9435B2FE24387FAD00DDF523 /* babyChick.mp3 */; };
+		943E9C43243761810006101E /* TimerSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943E9C42243761810006101E /* TimerSettingViewController.swift */; };
+		94725921244069AE000B1ABF /* Extension+MPVolumeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94725920244069AE000B1ABF /* Extension+MPVolumeView.swift */; };
+		94725923244069DC000B1ABF /* SoundPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94725922244069DC000B1ABF /* SoundPlayer.swift */; };
+		9472592524406A0F000B1ABF /* EggBoilingTimerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9472592424406A0F000B1ABF /* EggBoilingTimerViewModel.swift */; };
+		9472592724406A96000B1ABF /* Extension+UIScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9472592624406A96000B1ABF /* Extension+UIScreen.swift */; };
+		9472592A24406E58000B1ABF /* History.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9472592924406E58000B1ABF /* History.storyboard */; };
+		9472592C24406E72000B1ABF /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9472592B24406E72000B1ABF /* HistoryViewController.swift */; };
+		9472592E244072AD000B1ABF /* Extention+Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9472592D244072AD000B1ABF /* Extention+Notification.swift */; };
+		9472593024407616000B1ABF /* AlertPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9472592F24407616000B1ABF /* AlertPresentable.swift */; };
+		9472593224407822000B1ABF /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9472593124407822000B1ABF /* MainTabBarController.swift */; };
 		9492E47E243068750078219A /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9492E47D243068750078219A /* Setting.storyboard */; };
 		9492E480243069870078219A /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9492E47F243069870078219A /* SettingViewController.swift */; };
 		94C78F44242A267D00716380 /* rooster.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 94C78F43242A267D00716380 /* rooster.mp3 */; };
@@ -25,10 +38,23 @@
 /* Begin PBXFileReference section */
 		940F501C24333CD3002E758C /* BMYEONSUNG_otf.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = BMYEONSUNG_otf.otf; sourceTree = "<group>"; };
 		940F501D24333CD3002E758C /* BMEULJIRO.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = BMEULJIRO.otf; sourceTree = "<group>"; };
+		9423A26824755CF200C6B64B /* Storage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
+		9423A26A24756CEA00C6B64B /* HistoryManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryManager.swift; sourceTree = "<group>"; };
+		9435B2FE24387FAD00DDF523 /* babyChick.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = babyChick.mp3; sourceTree = "<group>"; };
+		943E9C42243761810006101E /* TimerSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerSettingViewController.swift; sourceTree = "<group>"; };
+		94725920244069AE000B1ABF /* Extension+MPVolumeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+MPVolumeView.swift"; sourceTree = "<group>"; };
+		94725922244069DC000B1ABF /* SoundPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundPlayer.swift; sourceTree = "<group>"; };
+		9472592424406A0F000B1ABF /* EggBoilingTimerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EggBoilingTimerViewModel.swift; sourceTree = "<group>"; };
+		9472592624406A96000B1ABF /* Extension+UIScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIScreen.swift"; sourceTree = "<group>"; };
+		9472592924406E58000B1ABF /* History.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = History.storyboard; sourceTree = "<group>"; };
+		9472592B24406E72000B1ABF /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		9472592D244072AD000B1ABF /* Extention+Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extention+Notification.swift"; sourceTree = "<group>"; };
+		9472592F24407616000B1ABF /* AlertPresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertPresentable.swift; sourceTree = "<group>"; };
+		9472593124407822000B1ABF /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		9492E47D243068750078219A /* Setting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Setting.storyboard; sourceTree = "<group>"; };
 		9492E47F243069870078219A /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		94C78F43242A267D00716380 /* rooster.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = rooster.mp3; sourceTree = "<group>"; };
-		94D67B782428FD0800799F85 /* 삶이란.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "삶이란.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		94D67B782428FD0800799F85 /* EggBoilingTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EggBoilingTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94D67B7B2428FD0800799F85 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		94D67B7D2428FD0800799F85 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		94D67B822428FD0800799F85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -60,6 +86,46 @@
 			path = Font;
 			sourceTree = "<group>";
 		};
+		9447E700248FD753009F69D8 /* EggTimer */ = {
+			isa = PBXGroup;
+			children = (
+				94D67B812428FD0800799F85 /* Main.storyboard */,
+				94D67B8F24290FDB00799F85 /* EggBoilingTimerViewController.swift */,
+				9472592424406A0F000B1ABF /* EggBoilingTimerViewModel.swift */,
+			);
+			path = EggTimer;
+			sourceTree = "<group>";
+		};
+		9447E701248FD760009F69D8 /* History */ = {
+			isa = PBXGroup;
+			children = (
+				9472592924406E58000B1ABF /* History.storyboard */,
+				9472592B24406E72000B1ABF /* HistoryViewController.swift */,
+				9423A26A24756CEA00C6B64B /* HistoryManager.swift */,
+			);
+			path = History;
+			sourceTree = "<group>";
+		};
+		9447E702248FD76C009F69D8 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				9492E47D243068750078219A /* Setting.storyboard */,
+				9492E47F243069870078219A /* SettingViewController.swift */,
+				943E9C42243761810006101E /* TimerSettingViewController.swift */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		9472592824406AB4000B1ABF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				94725920244069AE000B1ABF /* Extension+MPVolumeView.swift */,
+				9472592D244072AD000B1ABF /* Extention+Notification.swift */,
+				9472592624406A96000B1ABF /* Extension+UIScreen.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		94D67B6F2428FD0800799F85 = {
 			isa = PBXGroup;
 			children = (
@@ -71,7 +137,7 @@
 		94D67B792428FD0800799F85 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				94D67B782428FD0800799F85 /* 삶이란.app */,
+				94D67B782428FD0800799F85 /* EggBoilingTimer.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -81,15 +147,19 @@
 			children = (
 				94D67B7B2428FD0800799F85 /* AppDelegate.swift */,
 				94D67B7D2428FD0800799F85 /* SceneDelegate.swift */,
-				94D67B812428FD0800799F85 /* Main.storyboard */,
-				94D67B8F24290FDB00799F85 /* EggBoilingTimerViewController.swift */,
+				9447E700248FD753009F69D8 /* EggTimer */,
+				9447E701248FD760009F69D8 /* History */,
+				9447E702248FD76C009F69D8 /* Setting */,
+				94725922244069DC000B1ABF /* SoundPlayer.swift */,
 				94D67B912429105000799F85 /* IdentifyHelper.swift */,
-				9492E47D243068750078219A /* Setting.storyboard */,
-				9492E47F243069870078219A /* SettingViewController.swift */,
-				94D67B842428FD0800799F85 /* Assets.xcassets */,
-				94D67B862428FD0800799F85 /* LaunchScreen.storyboard */,
+				9472592F24407616000B1ABF /* AlertPresentable.swift */,
+				9472593124407822000B1ABF /* MainTabBarController.swift */,
+				9423A26824755CF200C6B64B /* Storage.swift */,
+				9472592824406AB4000B1ABF /* Extensions */,
 				940F502024333CDE002E758C /* Font */,
 				94D67B9424292DA700799F85 /* Sounds */,
+				94D67B842428FD0800799F85 /* Assets.xcassets */,
+				94D67B862428FD0800799F85 /* LaunchScreen.storyboard */,
 				94D67B892428FD0800799F85 /* Info.plist */,
 			);
 			path = EggBoilingTimer;
@@ -99,6 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				94D67B9324292DA300799F85 /* rooster.m4a */,
+				9435B2FE24387FAD00DDF523 /* babyChick.mp3 */,
 				94C78F43242A267D00716380 /* rooster.mp3 */,
 			);
 			path = Sounds;
@@ -121,7 +192,7 @@
 			);
 			name = EggBoilingTimer;
 			productName = EggBoilingTimer;
-			productReference = 94D67B782428FD0800799F85 /* 삶이란.app */;
+			productReference = 94D67B782428FD0800799F85 /* EggBoilingTimer.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -163,7 +234,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				940F501E24333CD3002E758C /* BMYEONSUNG_otf.otf in Resources */,
+				9435B2FF24387FAD00DDF523 /* babyChick.mp3 in Resources */,
 				94D67B882428FD0800799F85 /* LaunchScreen.storyboard in Resources */,
+				9472592A24406E58000B1ABF /* History.storyboard in Resources */,
 				94D67B952429304800799F85 /* rooster.m4a in Resources */,
 				94D67B852428FD0800799F85 /* Assets.xcassets in Resources */,
 				94D67B832428FD0800799F85 /* Main.storyboard in Resources */,
@@ -181,10 +254,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				9492E480243069870078219A /* SettingViewController.swift in Sources */,
+				9472592724406A96000B1ABF /* Extension+UIScreen.swift in Sources */,
+				94725921244069AE000B1ABF /* Extension+MPVolumeView.swift in Sources */,
+				94725923244069DC000B1ABF /* SoundPlayer.swift in Sources */,
+				9472593024407616000B1ABF /* AlertPresentable.swift in Sources */,
 				94D67B9024290FDB00799F85 /* EggBoilingTimerViewController.swift in Sources */,
+				9472592C24406E72000B1ABF /* HistoryViewController.swift in Sources */,
 				94D67B7C2428FD0800799F85 /* AppDelegate.swift in Sources */,
+				9472592524406A0F000B1ABF /* EggBoilingTimerViewModel.swift in Sources */,
 				94D67B7E2428FD0800799F85 /* SceneDelegate.swift in Sources */,
+				9472593224407822000B1ABF /* MainTabBarController.swift in Sources */,
+				943E9C43243761810006101E /* TimerSettingViewController.swift in Sources */,
+				9423A26B24756CEA00C6B64B /* HistoryManager.swift in Sources */,
 				94D67B922429105000799F85 /* IdentifyHelper.swift in Sources */,
+				9472592E244072AD000B1ABF /* Extention+Notification.swift in Sources */,
+				9423A26924755CF200C6B64B /* Storage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,16 +413,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 8;
 				DEVELOPMENT_TEAM = C98APEMDUR;
 				INFOPLIST_FILE = EggBoilingTimer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.0;
+				MARKETING_VERSION = 1.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.joonwon.EggBoilingTimer;
-				PRODUCT_NAME = "삶이란";
+				PRODUCT_NAME = EggBoilingTimer;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -349,16 +433,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 8;
 				DEVELOPMENT_TEAM = C98APEMDUR;
 				INFOPLIST_FILE = EggBoilingTimer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.0;
+				MARKETING_VERSION = 1.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.joonwon.EggBoilingTimer;
-				PRODUCT_NAME = "삶이란";
+				PRODUCT_NAME = EggBoilingTimer;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

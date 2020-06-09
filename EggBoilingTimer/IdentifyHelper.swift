@@ -46,11 +46,3 @@ class IdentityHelper {
         #endif
     }
 }
-
-
-extension UIScreen {
-    static var hasNotch: Bool {
-        let insets = UIApplication.shared.windows.first?.safeAreaInsets ?? UIEdgeInsets.zero
-        return insets.bottom > 0
-    }
-}

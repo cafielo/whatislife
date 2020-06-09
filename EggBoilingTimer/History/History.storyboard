@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="BMEULJIRO.otf">
+            <string>BMEULJIRO</string>
+        </array>
+        <array key="BMYEONSUNG_otf.otf">
+            <string>BMYEONSUNG-OTF</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--히스토리-->
+        <scene sceneID="9x2-mI-GWZ">
+            <objects>
+                <viewController storyboardIdentifier="HistoryViewController" id="PNG-BB-Fwr" customClass="HistoryViewController" customModule="EggBoilingTimer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PiH-IL-SNV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="100" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fXj-bc-hoc">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="HistoryCell" rowHeight="100" id="kTy-XQ-ykZ" customClass="HistoryCell" customModule="EggBoilingTimer" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="kTy-XQ-ykZ" id="Gra-L7-taZ">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_medium_egg" translatesAutoresizingMaskIntoConstraints="NO" id="5Ds-Dn-3AG">
+                                                    <rect key="frame" x="27" y="10" width="80" height="80"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="80" id="3sG-1o-L4M"/>
+                                                        <constraint firstAttribute="width" constant="80" id="oWe-Pm-9RC"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="핵촉촉" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4ND-4x-Qal">
+                                                    <rect key="frame" x="123" y="37.5" width="57" height="25"/>
+                                                    <fontDescription key="fontDescription" name="BMEULJIRO" family="BM EULJIRO" pointSize="22"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20/09/24 10시 9분" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Wr-JN-94h">
+                                                    <rect key="frame" x="240" y="40" width="154" height="20.5"/>
+                                                    <fontDescription key="fontDescription" name="BMEULJIRO" family="BM EULJIRO" pointSize="18"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="5Ds-Dn-3AG" firstAttribute="leading" secondItem="Gra-L7-taZ" secondAttribute="leading" constant="27" id="9yh-Qe-yzI"/>
+                                                <constraint firstItem="0Wr-JN-94h" firstAttribute="centerY" secondItem="Gra-L7-taZ" secondAttribute="centerY" id="SQz-wO-oWg"/>
+                                                <constraint firstItem="4ND-4x-Qal" firstAttribute="leading" secondItem="5Ds-Dn-3AG" secondAttribute="trailing" constant="16" id="buy-vz-R7I"/>
+                                                <constraint firstItem="5Ds-Dn-3AG" firstAttribute="centerY" secondItem="Gra-L7-taZ" secondAttribute="centerY" id="cnX-YC-lN6"/>
+                                                <constraint firstAttribute="trailing" secondItem="0Wr-JN-94h" secondAttribute="trailing" constant="20" id="ete-Vi-qO1"/>
+                                                <constraint firstItem="4ND-4x-Qal" firstAttribute="centerY" secondItem="Gra-L7-taZ" secondAttribute="centerY" id="mNd-up-PTu"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="iconImageView" destination="5Ds-Dn-3AG" id="GaV-Po-YLU"/>
+                                            <outlet property="timestampLabel" destination="0Wr-JN-94h" id="VcM-uK-i4f"/>
+                                            <outlet property="typeTitleLabel" destination="4ND-4x-Qal" id="cSd-qB-j9a"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="PNG-BB-Fwr" id="Tvp-9A-PNg"/>
+                                    <outlet property="delegate" destination="PNG-BB-Fwr" id="OJy-0d-91o"/>
+                                </connections>
+                            </tableView>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yiG-Y7-7j5">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_chicken_head" translatesAutoresizingMaskIntoConstraints="NO" id="MlR-Cw-gxR">
+                                        <rect key="frame" x="157" y="184.5" width="100" height="200"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="MlR-Cw-gxR" secondAttribute="height" multiplier="1:2" id="Xos-TF-QKE"/>
+                                            <constraint firstAttribute="width" constant="100" id="ojY-Cb-yUB"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="아직 달걀을 한번도 삶지 않았습니다.   타이머 탭에가서 달걀 삶기를 해보세요" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ncp-cA-dy5">
+                                        <rect key="frame" x="20" y="456.5" width="374" height="86.5"/>
+                                        <fontDescription key="fontDescription" name="BMYEONSUNG-OTF" family="BM YEONSUNG OTF" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.92941176469999998" blue="0.88235294119999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="MlR-Cw-gxR" firstAttribute="centerY" secondItem="yiG-Y7-7j5" secondAttribute="centerY" constant="-100" id="5Wn-XA-IWx"/>
+                                    <constraint firstItem="MlR-Cw-gxR" firstAttribute="centerX" secondItem="yiG-Y7-7j5" secondAttribute="centerX" id="7Mo-Cg-SIb"/>
+                                    <constraint firstAttribute="trailing" secondItem="ncp-cA-dy5" secondAttribute="trailing" constant="20" id="UOq-v9-8i5"/>
+                                    <constraint firstItem="ncp-cA-dy5" firstAttribute="leading" secondItem="yiG-Y7-7j5" secondAttribute="leading" constant="20" id="ZSZ-nt-Qjl"/>
+                                    <constraint firstItem="ncp-cA-dy5" firstAttribute="top" secondItem="MlR-Cw-gxR" secondAttribute="bottom" constant="72" id="eCu-eM-3qI"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.92941176469999998" blue="0.88235294119999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="yiG-Y7-7j5" firstAttribute="width" secondItem="fXj-bc-hoc" secondAttribute="width" id="CXw-Ax-7jT"/>
+                            <constraint firstItem="8By-cU-lIb" firstAttribute="trailing" secondItem="fXj-bc-hoc" secondAttribute="trailing" id="Yf2-zj-ZIO"/>
+                            <constraint firstItem="yiG-Y7-7j5" firstAttribute="top" secondItem="fXj-bc-hoc" secondAttribute="top" id="k9y-4t-0tj"/>
+                            <constraint firstItem="yiG-Y7-7j5" firstAttribute="leading" secondItem="fXj-bc-hoc" secondAttribute="leading" id="leF-DG-qUU"/>
+                            <constraint firstItem="yiG-Y7-7j5" firstAttribute="height" secondItem="fXj-bc-hoc" secondAttribute="height" id="men-UQ-9YL"/>
+                            <constraint firstItem="fXj-bc-hoc" firstAttribute="top" secondItem="8By-cU-lIb" secondAttribute="top" id="pan-IS-RDH"/>
+                            <constraint firstItem="fXj-bc-hoc" firstAttribute="leading" secondItem="8By-cU-lIb" secondAttribute="leading" id="wMY-MA-l0T"/>
+                            <constraint firstItem="8By-cU-lIb" firstAttribute="bottom" secondItem="fXj-bc-hoc" secondAttribute="bottom" id="zxF-NA-jzO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="8By-cU-lIb"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="히스토리" image="chart.pie.fill" catalog="system" id="4my-A9-4hj"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="emptyView" destination="yiG-Y7-7j5" id="p5g-42-ev2"/>
+                        <outlet property="tableView" destination="fXj-bc-hoc" id="LzR-nO-0C3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kLx-N4-wTR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-26.086956521739133" y="108.48214285714285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="chart.pie.fill" catalog="system" width="128" height="124"/>
+        <image name="img_chicken_head" width="51" height="100.5"/>
+        <image name="img_medium_egg" width="120" height="139.5"/>
+    </resources>
+</document>
